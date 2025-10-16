@@ -5,19 +5,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    /* Fondo negro y texto blanco global */
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Navbar oscuro */
+    .navbar {
+      background-color: #111 !important;
+    }
+
+    .navbar a {
+      color: #fff !important;
+    }
+
+    .navbar a:hover {
+      color: #dc3545 !important;
+    }
+
+    /* Sección clientes roja */
+    .clientes {
+      background-color: #dc3545 !important;
+    }
+
+    /* Footer rojo */
+    footer {
+      background-color: #dc3545 !important;
+      color: #fff;
+    }
+
+    footer a {
+      color: #fff !important;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Botones adaptados */
+    .btn-outline-success {
+      color: #fff;
+      border-color: #dc3545;
+    }
+
+    .btn-outline-success:hover {
+      background-color: #dc3545;
+      border-color: #dc3545;
+    }
+
+    .btn-success {
+      background-color: #dc3545;
+      border-color: #dc3545;
+    }
+
+    .btn-success:hover {
+      background-color: #b02a37;
+      border-color: #b02a37;
+    }
+
+    /* Cartas con fondo negro */
+    .card {
+      background-color: #111;
+      color: #fff;
+    }
+
+    .card a.btn-primary {
+      background-color: #dc3545;
+      border-color: #dc3545;
+    }
+
+    .card a.btn-primary:hover {
+      background-color: #b02a37;
+      border-color: #b02a37;
+    }
+
+  </style>
 </head>
 
 <body>
 
   <!-- Menu -->
-
-  <nav class="navbar navbar-expand-sm bg-body-tertiary">
+  <nav class="navbar navbar-expand-sm">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">David santiago Gil Cifuentes</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">David Santiago Gil Cifuentes</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -26,19 +114,23 @@
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Cursos </a>
+            <a class="nav-link" href="#">Cursos</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               Tutoriales
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Nuevos</a></li>
-              <li><a class="dropdown-item" href="#">Capasitados</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Expertos</a></li>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white" href="#">Nuevos</a></li>
+              <li><a class="dropdown-item text-white" href="#">Capacitados</a></li>
+              <li><hr class="dropdown-divider text-white"></li>
+              <li><a class="dropdown-item text-white" href="#">Expertos</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -46,13 +138,19 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+          <input
+            class="form-control me-2 bg-dark text-white border-light"
+            type="search"
+            placeholder="Buscar"
+            aria-label="Search"
+          >
           <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
       </div>
     </div>
   </nav>
 
+  <!-- Carrusel -->
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" style="max-height: 500px;">
@@ -65,19 +163,18 @@
         <img src="img/tecno.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
 
-  <div class="container-fluid bg-danger-subtle py-4 text-center">
+  <!-- Clientes -->
+  <div class="container-fluid clientes py-4 text-center">
     <div class="row">
       <div class="col-6 col-md-4 col-lg-2"><img src="img/clients-1.webp" style="max-width: 80px;" alt="..."></div>
       <div class="col-6 col-md-4 col-lg-2"><img src="img/clients-2.webp" style="max-width: 80px;" alt="..."></div>
@@ -88,67 +185,111 @@
     </div>
   </div>
 
-
+  <!-- Acerca de -->
   <div class="container mt-5">
     <h2 class="text-center">ACERCA DE</h2>
     <div class="row">
-      <div class="col-6 p-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure facere voluptatem
-        cupiditate alias quis earum ex? Vero, magni. Qui vero quis facere labore hic odit quasi aspernatur sunt
-        facilis.</div>
-
-      <div class="col-6 p-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis aspernatur nihil
-        aliquam fugit aperiam libero repudiandae. Saepe, harum deleniti nam unde voluptatibus aliquam modi
-        adipisci id. Ipsum, assumenda dolores. <br>
-       <button class="btn btn-outline-success" type="submit">Buscar</button>
+      <div class="col-6 p-5">
+        Crean, poseen y venden software empaquetado y estandarizado, que se licencia a múltiples clientes Microsoft (Office, Windows), Adobe (Creative Cloud), Oracle.
+Empresas de Servicios/Consultoría	Venden tiempo, experiencia y recursos (programadores, arquitectos) para desarrollar soluciones a medida para terceros.
       </div>
+      <div class="col-6 p-5">
+       Ofrecen software como un servicio basado en la nube a través de un modelo de suscripción, eliminando la necesidad de instalación local.	Salesforce, HubSpot, Zoom, Slack. Fábricas de Software Utilizan procesos estandarizados e industrializados para la producción masiva, eficiente y rápida de componentes.
+        <button class="btn btn-outline-success mt-3" type="submit">Buscar</button>
+      </div>
+    </div>
+  </div>
 
-
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card border-0">
-              <img src="img/card-1.jpg" class="card-img-top rounded-circle" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                  the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
+  <!-- Tarjetas circulares -->
+  <div class="container mt-5 d-none d-md-block">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card border-0">
+          <img src="img/card-1.jpg" class="card-img-top rounded-circle" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Socializar</h5>
+            <p class="card-text">Ofrecer un servicio en la nube y actualizarlo constantemente, basando el éxito en la satisfacción..</p>
+            <a href="#" class="btn btn-primary"> Inicio </a>
           </div>
-      
-      
+        </div>
+      </div>
 
       <div class="col-md-4">
         <div class="card border-0">
           <img src="img/card-2.jpg" class="card-img-top rounded-circle" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-              the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card-body text-center">
+            <h5 class="card-title">Pensar</h5>
+            <p class="card-text">Crear una solución estandarizada y visionaria (Ej. Microsoft Office) para el mercado masivo..</p>
+            <a href="#" class="btn btn-primary"> Desarollo </a>
           </div>
         </div>
       </div>
-
 
       <div class="col-md-4">
         <div class="card border-0">
           <img src="img/card-3.jpg" class="card-img-top rounded-circle" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-              the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card-body text-center">
+            <h5 class="card-title">Analizar</h5>
+            <p class="card-text">Analizar los problemas internos de un cliente para desarrollar una solución a medida y estratégica..</p>
+            <a href="#" class="btn btn-primary"> Fin </a>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
+  <!-- Cursos SENA -->
+  <div class="container mt-5">
+    <div class="card mb-3 border-0">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img src="img/lio.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-7">
+          <div class="card-body">
+            <h5 class="card-title">El Front-end</h5>
+            <p class="card-text">El Front-end es lo que usted, como usuario final, puede ver y con lo que interactúa. Es la parte que se descarga y se ejecuta en su navegador (Chrome, Safari, Firefox) o en su aplicación móvil. Su enfoque es la Experiencia de Usuario (UX)..</p>
+            <div class="text-center"><a href="#" class="btn btn-success btn-lg">Certificate</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="container mt-5">
+    <div class="card mb-3 border-0">
+      <div class="row g-0">
+        <div class="col-md-7">
+          <div class="card-body">
+            <h5 class="card-title">El Back-end</h5>
+            <p class="card-text">El Back-end es el cerebro de la aplicación. Es el código que se ejecuta en el servidor (remoto) y que el usuario nunca ve. Su principal enfoque es el Procesamiento, la Seguridad y la Persistencia de Datos..</p>
+            <div class="text-center"><a href="#" class="btn btn-success btn-lg">Certificate</a></div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img src="img/fot.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+  <!-- Footer -->
+  <footer class="text-center p-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col"><a href="#" class="text-decoration-none"><i class="bi bi-award"></i>  Cursos</a></div>
+        <div class="col"><a href="#" class="text-decoration-none"><i class="bi bi-play-btn-fill"></i>  Tutoriales</a></div>
+        <div class="col"><a href="#" class="text-decoration-none"><i class="bi bi-download"></i>  Descargas</a></div>
+        <div class="col"><a href="#" class="text-decoration-none"><i class="bi bi-person-circle"></i>  Contacto</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
 </body>
 
 </html>
