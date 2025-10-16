@@ -88,6 +88,130 @@
       border-color: #b02a37;
     }
 
+    /* ==== EFECTO NEÓN ROJO Y NEGRO ==== */
+
+    /* --- Input de búsqueda --- */
+    .form-control {
+      background-color: #0a0a0a !important;
+      border: 1px solid #dc3545;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(220, 53, 69, 0.5);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .form-control:focus {
+      background-color: #000;
+      border-color: #ff0033;
+      box-shadow: 0 0 15px #ff0033, 0 0 30px rgba(255, 0, 51, 0.3);
+      color: #fff;
+    }
+
+    /* --- Botón de búsqueda --- */
+    .btn-outline-success {
+      border-color: #ff0033 !important;
+      color: #fff !important;
+      box-shadow: 0 0 10px rgba(255, 0, 51, 0.5);
+      text-shadow: 0 0 5px rgba(255, 0, 51, 0.8);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-outline-success:hover {
+      background-color: #ff0033 !important;
+      color: #000 !important;
+      box-shadow: 0 0 20px #ff0033, 0 0 40px rgba(255, 0, 51, 0.8);
+    }
+
+    /* --- Cuadros de texto y botones en secciones --- */
+    .btn-success,
+    .btn-primary {
+      background-color: #111;
+      border-color: #ff0033;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(255, 0, 51, 0.4);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-success:hover,
+    .btn-primary:hover {
+      background-color: #ff0033;
+      color: #000;
+      box-shadow: 0 0 20px #ff0033, 0 0 40px rgba(255, 0, 51, 0.7);
+    }
+
+    /* --- Cuadros de texto generales --- */
+    .card {
+      background-color: #0a0a0a !important;
+      border: 1px solid rgba(255, 0, 51, 0.2);
+      box-shadow: 0 0 10px rgba(255, 0, 51, 0.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255, 0, 51, 0.6);
+    }
+
+    /* --- Navbar inputs y dropdown hover --- */
+    .navbar .form-control:hover,
+    .navbar .form-control:focus {
+      box-shadow: 0 0 20px #ff0033, inset 0 0 10px rgba(255, 0, 51, 0.5);
+    }
+
+    .dropdown-menu {
+      border: 1px solid #ff0033;
+      box-shadow: 0 0 15px rgba(255, 0, 51, 0.4);
+      background-color: #0a0a0a;
+    }
+
+    .dropdown-item {
+      color: #fff !important;
+    }
+
+    .dropdown-item:hover {
+      background-color: #ff0033 !important;
+      color: #000 !important;
+      text-shadow: 0 0 10px #000;
+    }
+
+    /* --- Efecto suave en el navbar links --- */
+    .navbar a {
+      transition: all 0.3s ease-in-out;
+      text-shadow: 0 0 5px rgba(255, 0, 51, 0.4);
+    }
+
+    .navbar a:hover {
+      color: #ff0033 !important;
+      text-shadow: 0 0 15px rgba(255, 0, 51, 0.8);
+    }
+
+    /* --- Navbar general --- */
+    .navbar {
+      background-color: #000 !important;
+      border-bottom: 1px solid rgba(255, 0, 51, 0.4);
+      box-shadow: 0 0 15px rgba(255, 0, 51, 0.4);
+    }
+
+    /* --- Footer estilo neón --- */
+    footer {
+      background-color: #000;
+      color: #fff;
+      border-top: 1px solid #ff0033;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 0 20px rgba(255, 0, 51, 0.6);
+      text-shadow: 0 0 5px rgba(255, 0, 51, 0.7);
+    }
+
+    footer a {
+      color: #ff0033;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    footer a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #ff0033;
+    }
   </style>
 </head>
 
@@ -191,10 +315,10 @@
     <div class="row">
       <div class="col-6 p-5">
         Crean, poseen y venden software empaquetado y estandarizado, que se licencia a múltiples clientes Microsoft (Office, Windows), Adobe (Creative Cloud), Oracle.
-Empresas de Servicios/Consultoría	Venden tiempo, experiencia y recursos (programadores, arquitectos) para desarrollar soluciones a medida para terceros.
+        Empresas de Servicios/Consultoría Venden tiempo, experiencia y recursos (programadores, arquitectos) para desarrollar soluciones a medida para terceros.
       </div>
       <div class="col-6 p-5">
-       Ofrecen software como un servicio basado en la nube a través de un modelo de suscripción, eliminando la necesidad de instalación local.	Salesforce, HubSpot, Zoom, Slack. Fábricas de Software Utilizan procesos estandarizados e industrializados para la producción masiva, eficiente y rápida de componentes.
+       Ofrecen software como un servicio basado en la nube a través de un modelo de suscripción, eliminando la necesidad de instalación local. Salesforce, HubSpot, Zoom, Slack. Fábricas de Software Utilizan procesos estandarizados e industrializados para la producción masiva, eficiente y rápida de componentes.
         <button class="btn btn-outline-success mt-3" type="submit">Buscar</button>
       </div>
     </div>
