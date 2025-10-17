@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 90%;
+      margin-top: auto !important;
+      margin-bottom: auto !important;
+    }
+
+    /* === TARJETAS DE TUTORIALES NEÓN ROJO === */
+    .tutorial-card {
+      border: 3px solid #ff0033;
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 25px;
+      background-color: rgba(10, 10, 10, 0.7);
+      box-shadow: 0 0 25px rgba(255, 0, 51, 0.6), inset 0 0 10px rgba(255, 0, 51, 0.4);
+      transition: all 0.3s ease-in-out;
+      text-align: center;
+    }
+
+    .tutorial-card:hover {
+      box-shadow: 0 0 40px rgba(255, 0, 51, 0.9), inset 0 0 15px rgba(255, 0, 51, 0.6);
+      transform: scale(1.02);
+    }
+
+    .btn-tutorial {
+      display: inline-block;
+      background-color: #111;
+      color: #fff;
+      border: 2px solid #ff0033;
+      border-radius: 10px;
+      padding: 10px 25px;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(255, 0, 51, 0.6);
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .btn-tutorial:hover {
+      background-color: #ff0033;
+      color: #000;
+      box-shadow: 0 0 25px #ff0033, 0 0 50px rgba(255, 0, 51, 0.8);
+      transform: scale(1.05);
+    }
+
+    .navbar {
+      background-color: #000 !important;
+      border-bottom: 1px solid rgba(255, 0, 51, 0.4);
+      box-shadow: 0 0 15px rgba(255, 0, 51, 0.4);
+    }
+
+    .navbar a {
+      color: #fff !important;
+    }
+
+    .navbar a:hover {
+      color: #ff0033 !important;
+    }
+
+    footer {
+      background-color: #dc3545 !important;
+      color: #fff;
+      margin-top: auto;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff !important;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Menu -->
+<nav class="navbar navbar-expand-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">David Santiago Gil Cifuentes</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cursos.html">Cursos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Tutoriales
+          </a>
+          <ul class="dropdown-menu bg-dark">
+            <li><a class="dropdown-item text-white" href="Socializar.html">Socializar</a></li>
+            <li><a class="dropdown-item text-white" href="Pensar.html">Pensar</a></li>
+            <li><hr class="dropdown-divider text-white"></li>
+            <li><a class="dropdown-item text-white" href="Analizar.html">Analizar</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactos.html">Contactos</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2 bg-dark text-white border-light"
+          type="search"
+          placeholder="Buscar"
+          aria-label="Search"
+        >
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  <!-- === SECCIÓN DE TUTORIALES === -->
+  <div class="container mt-4">
+    <h2 class="text-center mb-4">Nuestros Tutoriales</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="tutorial-card">
+          <h3 class="text-danger"> Socializar</h3>
+          <p>Aprende a comunicarte y trabajar efectivamente con otros en entornos.</p>
+          <a href="Socializar.html" class="btn-tutorial">Ver Tutorial</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="tutorial-card">
+          <h3 class="text-danger"> Pensar</h3>
+          <p>Desarrolla habilidades de pensamiento crítico y resolución de problemas.</p>
+          <a href="Pensar.html" class="btn-tutorial">Ver Tutorial</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="tutorial-card">
+          <h3 class="text-danger"> Analizar</h3>
+          <p>Aprende a investigar, interpretar datos y tomar decisiones fundamentadas.</p>
+          <a href="Analizar.html" class="btn-tutorial">Ver Tutorial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- === FOOTER === -->
+  <footer class="text-center p-5">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-6 col-md-2 mb-2"><a href="cursos.html"> Cursos</a></div>
+        <div class="col-6 col-md-2 mb-2"><a href="Tutoriales.html"> Tutoriales</a></div>
+        <div class="col-6 col-md-3 mb-2"><a href="descargas.html"> Descargas</a></div>
+        <div class="col-6 col-md-3 mb-2"><a href="contactos.html"> Contacto</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6V6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></script>
+</body>
+
+</html>

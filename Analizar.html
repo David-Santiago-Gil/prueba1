@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial Analizar - Habilidades de Análisis</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 90%;
+      margin-top: auto !important;
+      margin-bottom: auto !important;
+    }
+
+    /* === TARJETA ANALIZAR NEÓN ROJO === */
+    .tutorial-card {
+      border: 3px solid #ff0033;
+      border-radius: 15px;
+      padding: 30px;
+      margin: 30px auto;
+      background-color: rgba(10, 10, 10, 0.7);
+      box-shadow: 0 0 25px rgba(255, 0, 51, 0.6), inset 0 0 10px rgba(255, 0, 51, 0.4);
+      transition: all 0.3s ease-in-out;
+      max-width: 700px;
+    }
+
+    .tutorial-card:hover {
+      box-shadow: 0 0 40px rgba(255, 0, 51, 0.9), inset 0 0 15px rgba(255, 0, 51, 0.6);
+      transform: scale(1.02);
+    }
+
+    .navbar {
+      background-color: #000 !important;
+      border-bottom: 1px solid rgba(255, 0, 51, 0.4);
+      box-shadow: 0 0 15px rgba(255, 0, 51, 0.4);
+    }
+
+    .navbar a {
+      color: #fff !important;
+    }
+
+    .navbar a:hover {
+      color: #ff0033 !important;
+    }
+
+    footer {
+      background-color: #dc3545 !important;
+      color: #fff;
+      margin-top: auto;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff !important;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Menu -->
+<nav class="navbar navbar-expand-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">David Santiago Gil Cifuentes</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cursos.html">Cursos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Tutoriales
+          </a>
+          <ul class="dropdown-menu bg-dark">
+            <li><a class="dropdown-item text-white" href="Socializar.html">Socializar</a></li>
+            <li><a class="dropdown-item text-white" href="Pensar.html">Pensar</a></li>
+            <li><hr class="dropdown-divider text-white"></li>
+            <li><a class="dropdown-item text-white" href="Analizar.html">Analizar</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactos.html">Contactos</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2 bg-dark text-white border-light"
+          type="search"
+          placeholder="Buscar"
+          aria-label="Search"
+        >
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  <!-- === TUTORIAL ANALIZAR SOBRE INFORMACIÓN Y DATOS === -->
+  <div class="container mt-4">
+    <div class="tutorial-card">
+      <h2 class="text-danger text-center">🔍 Analizar Información y Datos</h2>
+
+      <p><strong>Objetivo del Tutorial:</strong> Enseñar cómo examinar, interpretar y evaluar información y datos de manera
+        efectiva para tomar decisiones fundamentadas y resolver problemas complejos.</p>
+
+      <h4>1. Importancia del Análisis</h4>
+      <p>El análisis es clave para entender contextos, identificar patrones y tomar decisiones precisas:</p>
+      <ul>
+        <li>📊 Transformar datos crudos en información útil.</li>
+        <li>🧩 Comprender relaciones entre diferentes variables.</li>
+        <li>💡 Extraer conclusiones relevantes para la acción.</li>
+      </ul>
+
+      <h4>2. Herramientas para Analizar</h4>
+      <p>Existen múltiples herramientas digitales y métodos que facilitan el análisis:</p>
+      <ul>
+        <li>📈 Hojas de cálculo (Excel, Google Sheets) para organizar y graficar datos.</li>
+        <li>📉 Software estadístico (SPSS, R, Python) para análisis avanzado.</li>
+        <li>📌 Diagramas y mapas conceptuales para visualizar relaciones.</li>
+        <li>🔗 Bases de datos y dashboards para seguimiento de métricas.</li>
+      </ul>
+
+      <h4>3. Métodos de Análisis</h4>
+      <ul>
+        <li>📝 Comparación de datos históricos para identificar tendencias.</li>
+        <li>🔄 Análisis de causa-efecto para resolver problemas complejos.</li>
+        <li>📊 Visualización de información mediante gráficos y tablas.</li>
+        <li>🧠 Evaluación crítica de la fiabilidad y relevancia de la información.</li>
+      </ul>
+
+      <h4>4. Aplicaciones Prácticas</h4>
+      <ul>
+        <li>💼 En negocios: análisis de mercado, desempeño de proyectos y KPIs.</li>
+        <li>🎓 En educación: interpretación de resultados de investigaciones y evaluaciones.</li>
+        <li>🏡 En la vida cotidiana: decisiones financieras, elección de productos y planificación personal.</li>
+      </ul>
+
+      <h4>5. Consejos para Mejorar el Análisis</h4>
+      <ul>
+        <li>🔍 Ser metódico y organizado al revisar información.</li>
+        <li>🤔 Cuestionar supuestos y verificar fuentes de datos.</li>
+        <li>🧠 Practicar pensamiento lógico y crítico constantemente.</li>
+        <li>📚 Aprender nuevas técnicas y herramientas de análisis regularmente.</li>
+      </ul>
+
+      <p>Este tutorial proporciona estrategias y recursos para mejorar tus habilidades de análisis, permitiéndote tomar decisiones más inteligentes
+        y basadas en evidencia en cualquier contexto.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center p-5">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-6 col-md-3 mb-2"><a href="cursos.html" class="text-decoration-none"><i class="bi bi-award"></i>  Cursos</a></div>
+        <div class="col-6 col-md-3 mb-2"><a href="Tutoriales.html" class="text-decoration-none"><i class="bi bi-play-btn-fill"></i>  Tutoriales</a></div>
+        <div class="col-6 col-md-3 mb-2"><a href="descargas.html" class="text-decoration-none"><i class="bi bi-download"></i>  Descargas</a></div>
+        <div class="col-6 col-md-3 mb-2"><a href="contactos.html" class="text-decoration-none"><i class="bi bi-person-circle"></i>  Contacto</a></div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6V6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></script>
+</body>
+
+</html>
